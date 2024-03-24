@@ -95,14 +95,12 @@ a {
 }
 
 .iconoCarrito {
-
 }
 
 /* order 1 */
 .iconoMenuHamburguesa {
     color: var(--colorBlanco);
     order: 1;
-    
 }
 
 .iconoMenuHamburguesa svg {
@@ -127,7 +125,7 @@ a {
     width: 100vw;
 
     transform: translateX(-100%);
-    transition: transform .2s;
+    transition: transform 0.2s;
 
     display: flex;
     flex-direction: column;
@@ -192,14 +190,10 @@ a {
     text-align: center;
     border-radius: 20px;
     font-family: "Inter Tight", sans-serif;
-    
 }
 
 /* MAIN STYLES */
 
-
-.main {
-}
 
 /* SECCION PRINCIPAL ESTILOS */
 
@@ -268,7 +262,7 @@ a {
 /* SECCION RECOMENDACIONES */
 
 .seccionRecomendaciones {
-    background-color: #ECF1EE;
+    background-color: #ecf1ee;
     padding: 60px var(--paddingIzquierdaDerecha);
     width: 90%;
     border-radius: 20px;
@@ -278,10 +272,10 @@ a {
     gap: 25px;
 }
 .seccionRecomendaciones__title {
-    font-size: 42px ;
+    font-size: 42px;
     line-height: 100%;
-    font-weight: 700 ;
-    color: #000000 ;
+    font-weight: 700;
+    color: #000000;
     font-family: "Inter Tight", sans-serif;
     text-align: center;
 
@@ -317,15 +311,9 @@ a {
     font-size: 19px;
     text-align: center;
 }
-.svgPlato {
-}
-.svgCamion {
-}
-.svgMicroondas {
-}
 
 .btn__comerSano {
-     margin: 20px 0;
+    margin: 20px 0;
     background-color: #ff9933;
     color: var(--colorBlanco);
     font-weight: bold;
@@ -336,9 +324,334 @@ a {
     align-self: center;
 }
 
+/* TIENES QUE PROBAR SECCION */
+
+.seccionTienesQueProbar {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.slider__lista {
+    display: flex;
+    gap: 25px;
+    overflow-x: scroll;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+.slider__item {
+    min-width: min(100%, 360px);
+    background-color: #ecf1ee;
+    border-radius: 25px;
+}
+.comidaImgContainer {
+    position: relative;
+}
+.comidaImgContainer span {
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.705);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Inter Tight", sans-serif;
+    padding: 7px 15px;
+    border-radius: 20px;
+}
+.slider__item img {
+    max-width: 100%;
+    border-radius: 25px 25px 0 0;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.informacionDeLaComida {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.informacionDeLaComida h3 {
+    font-family: "Inter Tight", sans-serif;
+    font-size: 24px;
+}
+
+.precioPesoComida h4 {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+.precioPesoComida span {
+    font-family: "Inter Tight", sans-serif;
+    color: var(--colorTexto2);
+    font-weight: 500;
+}
+.informacionCalorica {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: "Inter Tight", sans-serif;
+    background-color: var(--colorBlanco);
+    border-radius: 30px;
+    padding: 10px 0;
+}
+.nutrientes {
+    text-align: center;
+}
+.nutrientes span {
+    font-size: 15px;
+}
+.nutrientes p {
+    font-size: 12px;
+}
+.slider__link {
+    margin: 20px 0;
+    background-color: #ff9933;
+    color: var(--colorBlanco);
+    font-weight: bold;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 18px;
+    padding: 9px 30px;
+    border-radius: 30px;
+    align-self: center;
+    width: 100%;
+    text-align: center;
+}
+.btn__verTodos {
+    background-color: #ff9933;
+    color: var(--colorBlanco);
+    font-weight: bold;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 24px;
+    padding: 9px 30px;
+    border-radius: 6px;
+    display: block;
+    width: 250px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+/* SECCION SLIDER INFINITO */
+@keyframes slider {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.slider__infinito {
+    background-color: var(--colorPrimario2);
+    width: 100%;
+    padding: 30px 0;
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+.slider-texto {
+    animation: slider 60s infinite linear;
+}
+.texto-span {
+    white-space: pre;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Inter Tight", sans-serif;
+    color: white;
+}
+
+/* SECCION HACEMOS TU VIDA MAS FACIL */
+
+.hacemos_tu_vida_facil {
+    margin-bottom: 50px;
+}
+.hacemos_tu_vida_facil article span {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 400;
+}
+.hacemos_tu_vida_facil article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    background-color: #ecf1ee;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+/* SECCION PIDE MÁS PAGA MENOS */
+.pideMasPagaMenos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.pideMasPagaMenos img {
+    max-width: 100%;
+    order: 1;
+    border-radius: 30px
+}
+.pideMasPagaMenos article {
+    order: 2;
+}
+.pideMasPagaMenos article span{
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--colorTexto2);
+}
+.pideMasPagaMenos article .parrafoDescuentos{
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 400;
+    color: var(--colorTexto2);
+    text-align: center;
+    text-wrap: pretty;
+    margin-bottom: 20px;
+}
+.pideMasPagaMenos article video{
+    width: 100%;
+    max-width: 300px;
+}
+.descuentosInformacion{
+}
+.descuentosInformacion p{
+    text-align: center;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    white-space: pre;
+    color: var(--colorTexto2);
+}
+.descuentosInformacion p strong{
+    color: black;
+}
+.descuentosInformacion p::before {
+    content: "";
+    background: url(assets/logoCheck.svg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    left: 0;
+    top: 5px;
+    bottom: 0;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+/* SECCION ALGUNA DUDA ACORDEON */
+.algunaDudaSeccion {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 900px;
+}
+.algunaDudaSeccion p {
+    color: var(--colorTexto2);
+    font-size: 16px;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.acordeon {
+    margin-top: 30px;
+}
+.details_algunaDuda {
+    border-top: 1px solid #000;
+}
+.details_algunaDuda:last-child {
+    border-bottom: 1px solid #000;
+}
+
+.summary_algunaduda {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.summaryParrafos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+.summaryParrafos p {
+    text-align: start;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    color: var(--colorTexto2);
+    font-size: 12px;
+}
+
+.summary_algunaduda h4 {
+    font-family: Fraunces, sans-serif;
+    font-size: 20px;
+}
+.icon-plus {
+    width: 20px;
+}
+
+/* FOOTER STYLES - ESTILOS DEL FOOTER */
+.footer {
+    background-color: var(--colorPrimario);
+}
+.footer__section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.marca__section {
+    margin-bottom: 30px;
+}
+.marca__section .logoKnoweatsSvg {
+    width: 201px;
+    height: 68px;
+}
+.footerMarcaIconoContainer {
+    display: flex;
+    gap: 20px;
+}
+.footerMarcaIconoContainer svg {
+    width: 40px;
+    height: auto;
+    fill: white;
+}
+.marca__section, .empresaFooterSection {
+    flex: 1;
+    min-width: 220px;
+}
+.empresaFooterSection {
+}
+.empresSectionInformacion {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.empresaFooterSection h4 {
+    color: white;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.empresaFooterSection ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.empresaFooterSection ul li a {
+    color: rgb(239, 238, 238);
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
 
 @media (min-width: 900px) {
-
     /* .container {
         max-width: 1500px;
         margin: 0 auto;
@@ -380,7 +693,6 @@ a {
         padding: 0;
     }
 
-
     .nav__link::after {
         content: "";
         position: absolute;
@@ -391,7 +703,7 @@ a {
         background-color: white;
         transform: scaleX(0);
         transform-origin: right;
-        transition: transform .3s ease-in-out;
+        transition: transform 0.3s ease-in-out;
     }
 
     .nav__link:hover::after {
@@ -404,17 +716,17 @@ a {
     }
 
     .nav__li:nth-child(1) .nav__link {
-        background-color:transparent;
+        background-color: transparent;
     }
-    
+
     .nav__li:nth-child(2) .nav__link {
         background-color: transparent;
     }
-    
+
     .nav__li:nth-child(3) .nav__link {
         background-color: transparent;
     }
-    
+
     .nav__li:nth-child(4) .nav__link {
         background-color: transparent;
         color: var(--colorBlanco);
@@ -460,11 +772,11 @@ a {
         gap: 20px;
         flex-basis: 50%;
     }
-    
+
     .seccionPrincipal__texto p {
         font-size: 20px;
     }
-    
+
     .seccionPrincipal__titulo {
         text-align: initial;
         font-size: 52px;
@@ -478,7 +790,7 @@ a {
     .img__seccionPrincipal {
         order: initial;
     }
-    
+
     .btn__hazTuPedido {
         align-self: start;
     }
@@ -488,4 +800,113 @@ a {
     .seccionRecomendaciones {
         gap: 40px;
     }
+
+    /* SECCION TIENES QUE PROBAR */
+
+    .slider__item {
+        min-width: fit-content;
+        background-color: #ecf1ee;
+        border-radius: 25px;
+    }
+
+    .comidaImgContainer span {
+        font-size: 14px;
+    }
+    .slider__item img {
+        min-width: 330px;
+        max-height: 275px;
+        border-radius: 25px 25px 0 0;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
+    .informacionDeLaComida {
+        gap: 0;
+    }
+    .informacionDeLaComida h3 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .precioPesoComida h4 {
+        font-size: 18px;
+    }
+    .precioPesoComida span {
+        font-size: 13px;
+    }
+    .informacionCalorica {
+        gap: 12px;
+        padding: 6px 0;
+        width: 95%;
+        margin-inline: auto;
+        margin-top: 10px;
+    }
+
+    .nutrientes span {
+        font-size: 13px;
+    }
+    .nutrientes p {
+        font-size: 10px;
+    }
+
+    /* SECCION HACEMOS TU VIDA MAS FACIL */
+    .hacemos_tu_vida_facil article {
+        padding: 20px 100px;
+        
+    }
+
+    /* SECCION PIDE MAS PAGA MENOS */
+
+    .pideMasPagaMenos {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .pideMasPagaMenos article {
+        order: initial;
+        min-width: 40%;
+    }
+    .pideMasPagaMenos article span{
+        text-align: start;
+    }
+    .contenedor-img-pidemasPagamenos {
+        width: 40%;
+    }
+
+    .pideMasPagaMenos img {
+        order: 1;
+        aspect-ratio: 7/8;
+    }
+    .pideMasPagaMenos article {
+        order: initial;
+    }
+    .pideMasPagaMenos article h2{
+        text-align: start;
+    }
+    .pideMasPagaMenos article .parrafoDescuentos{
+        font-size: 17px;
+        text-align: start;
+    }
+    .pideMasPagaMenos article video{
+        max-width: 500px;
+    }
+    .descuentosInformacion{
+       margin-left: 0;
+       display: flex;
+       flex-direction: column;
+       gap: 10px;
+       margin-bottom: 50px;
+    }
+    .descuentosInformacion p{
+        font-size: 17px;
+    }
+    .descuentosInformacion p::before {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* SUMMARY ESTILOS SECCION ACORDEON */
+    .summary_algunaduda:hover {
+        background-color: var(--colorPrimario4);
+    }
+
 }
